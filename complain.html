@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .complaint-box {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <title>Society Complaint Box</title>
+  </head>
+  <body>
+    <div class="complaint-box">
+      <h2>Write a Complaint</h2>
+      <form action="#" method="post">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="maintenance">Maintenance</option>
+          <option value="security">Security</option>
+          <option value="cleaning">Cleaning</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="details">Details:</label>
+        <textarea
+          id="details"
+          name="details"
+          rows="4"
+          placeholder="Describe your complaint..."
+        ></textarea>
+
+        <button type="submit">Submit Complaint</button>
+      </form>
+    </div>
+  </body>
+</html>
